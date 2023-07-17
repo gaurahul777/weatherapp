@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{> headerlinks}}
+  </head>   
+  <body>
+    {{> navbar}}
+    <div class="weather">
+<div class="weather-container container">
+<div class="main-content">
+      <form class="temp_form">
+      <input type="text" id="cityname" class="" placeholder="Enter your city name" autocomplete="off">
+      <input type="submit" value="search" id="submitbtn">
+    </form>
+    </div>
+
+<div class="tempinfo">
+<div class="top_layer">
+  <p id="dayname">Tuesday</p>
+  <p id="today_date">11 JULY</p>
+</div>
+<div class="main_layer">
+  <p id="City_Name">Get Output Here </p>
+<div class="middle_layer data_hide">
+  <p id="tempc"><span id="temp_val" >0</span><sup>o</sup>C</p>
+  <p id="temp_status"><i class="fa fa-cloud"></i></p>
+</div>
+</div>
+
+    </div>
+    </div>
+    </div>
+    
+
+    {{>footer}}
+        <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ {{>headerlinks}}
+  </head>   
+  <body>
+    {{> navbar}}
+    
+    <section class="showcase">
+      <div class="showcase-container container">
+        <div class="showcase-details">
+
+          <p>Welcome to My weatherapp</p>
+          <h1>Get The Latest
+            <span class="title">Weather</span>
+            Info of Your City</h1>
+          <a href="/weather" class="btn btn-primary">CHECK NOW</a>
+
+        </div>
+        <div class="showcase-images">
+          <div class="slideshow-container">
+            <div class="slider-wrapper">
+              <div class="slider">
+                <img
+                  id="slide1"
+                  class="slide"
+                  src="images/weather1.jpg"
+                  alt="weather-pics1"
+                />
+                <img
+                  id="slide2"
+                  class="slide"
+                  src="images/weather2.jpg"
+                  alt="weather-pics2"
+                />
+                <img
+                  id="slide3"
+                  class="slide"
+                  src="images/weather3.jpg"
+                  alt="weather-pics3"
+                />
+                <img
+                  id="slide4"
+                  class="slide"
+                  src="images/weather1.svg"
+                  alt="weather-pics4"
+                />
+              </div>
+              <div class="slider-nav">
+                <a href="#slide1" class="dot active"></a>
+                <a href="#slide2" class="dot active"></a>
+                <a href="#slide3" class="dot active"></a>
+                <a href="#slide4" class="dot active"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+   {{>footer}}
+       <script async src="js/main.js"></script>
+       <script async src="js/slide-index.js"></script>
+  </body>
+</html>

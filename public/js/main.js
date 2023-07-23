@@ -75,16 +75,19 @@ const timeweather = () => {
   var dayname = document.getElementById("dayname");
 
   var weeks = [
+    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
-    "Sunday",
   ];
-  var weekday = date.getDay() - 1;
+  var weekday = date.getDay();
+  // console.log(weekday)
   var daynaam = weeks[weekday];
+  // var daynaam = weeks[date.getDay() - 1];
+  // console.log(daynaam)
 
   let mahine = [
     "JAN",
